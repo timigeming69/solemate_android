@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#5D74F8">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="36dp"
+        android:layout_height="31dp"
+        app:srcCompat="@drawable/img_1"
+        tools:layout_editor_absoluteX="316dp"
+        tools:layout_editor_absoluteY="289dp" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="37dp"
+        android:layout_height="40dp"
+        app:srcCompat="@drawable/img_2"
+        tools:layout_editor_absoluteX="316dp"
+        tools:layout_editor_absoluteY="334dp" />
+
+    <EditText
+        android:id="@+id/editTextText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#5D74F7"
+        android:ems="10"
+        android:inputType="text"
+        android:singleLine="false"
+        android:text="Email"
+        android:textColor="#FFFFFF"
+        tools:layout_editor_absoluteX="60dp"
+        tools:layout_editor_absoluteY="282dp" />
+
+    <CheckBox
+        android:id="@+id/checkBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Remember Me"
+        android:textColor="#FFFFFF"
+        tools:layout_editor_absoluteX="141dp"
+        tools:layout_editor_absoluteY="381dp" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="112dp"
+        android:layout_height="53dp"
+        android:fontFamily="@font/archivo_black"
+        android:text="Login"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="186dp" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="344dp"
+        android:layout_height="261dp"
+        android:textAllCaps="true"
+        app:srcCompat="@drawable/img"
+        tools:layout_editor_absoluteX="32dp"
+        tools:layout_editor_absoluteY="220dp" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="216dp"
+        android:layout_height="126dp"
+        app:srcCompat="@drawable/img_3"
+        tools:layout_editor_absoluteX="96dp"
+        tools:layout_editor_absoluteY="453dp" />
+
+    <EditText
+        android:id="@+id/editTextText4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#5D74F7"
+        android:ems="10"
+        android:inputType="text"
+        android:text="Register"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        tools:layout_editor_absoluteX="104dp"
+        tools:layout_editor_absoluteY="432dp" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        android:textColor="#FFFFFF"
+        tools:layout_editor_absoluteX="182dp"
+        tools:layout_editor_absoluteY="505dp" />
+
+    <EditText
+        android:id="@+id/editTextText3"
+        android:layout_width="209dp"
+        android:layout_height="40dp"
+        android:backgroundTint="#5D74F7"
+        android:ems="10"
+        android:inputType="text"
+        android:text="Password"
+        android:textAlignment="viewStart"
+        android:textColor="#FFFFFF"
+        tools:layout_editor_absoluteX="59dp"
+        tools:layout_editor_absoluteY="334dp" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
