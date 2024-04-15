@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_centerVertical="true"
+    android:background="#5D74F8">
+
+    <TextView
+        android:id="@+id/Judul"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/archivo_black"
+        android:text="Register"
+        android:layout_marginTop="200dp"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="34sp"
+        android:layout_centerHorizontal="true"
+        />
+
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Judul"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        android:id="@+id/grubRegister"
+        android:layout_centerHorizontal="true"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/nama"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:backgroundTint="@color/black"
+            android:ems="10"
+            android:inputType="text"
+            android:singleLine="false"
+            android:text="Nama Lengkap"
+            android:textColor="#FFFFFF"
+            tools:layout_editor_absoluteX="60dp"
+            tools:layout_editor_absoluteY="282dp" />
+
+        <EditText
+            android:id="@+id/email"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:backgroundTint="@color/black"
+            android:ems="10"
+            android:inputType="text"
+            android:singleLine="false"
+            android:text="Email"
+            android:textColor="#FFFFFF"
+            tools:layout_editor_absoluteX="60dp"
+            tools:layout_editor_absoluteY="282dp" />
+
+        <EditText
+            android:id="@+id/no_telepon"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:backgroundTint="@color/black"
+            android:ems="10"
+            android:inputType="text"
+            android:singleLine="false"
+            android:text="No Telepon"
+            android:textColor="#FFFFFF"
+            tools:layout_editor_absoluteX="60dp"
+            tools:layout_editor_absoluteY="282dp" />
+
+        <EditText
+            android:id="@+id/alamat"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:backgroundTint="@color/black"
+            android:ems="10"
+            android:inputType="text"
+            android:singleLine="false"
+            android:text="Alamat"
+            android:textColor="#FFFFFF"
+            tools:layout_editor_absoluteX="60dp"
+            tools:layout_editor_absoluteY="282dp" />
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:backgroundTint="@color/black"
+            android:ems="10"
+            android:inputType="text"
+            android:text="Password"
+            android:textAlignment="viewStart"
+            android:textColor="#FFFFFF"
+            tools:layout_editor_absoluteX="59dp"
+            tools:layout_editor_absoluteY="334dp" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/text_error"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Error While Register"
+        android:textAlignment="center"
+        android:textColor="#FF0000"
+        android:visibility="gone"
+        android:layout_below="@id/grubRegister"
+        android:layout_centerHorizontal="true"
+        />
+
+    <ProgressBar
+        android:id="@+id/loading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:visibility="gone"
+        android:layout_centerHorizontal="true"
+        />
+
+    <Button
+        android:id="@+id/btn_signup"
+        android:layout_width="229dp"
+        android:layout_marginTop="40dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/grubRegister"
+        android:layout_centerHorizontal="true"
+        android:backgroundTint="#00FFFFFF"
+        android:text="Daftar"
+        android:textColor="@color/white"
+        app:strokeColor="@color/white"
+        app:strokeWidth="2dp" />
+
+</RelativeLayout>
