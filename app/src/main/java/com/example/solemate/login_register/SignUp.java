@@ -1,4 +1,4 @@
-package com.example.solemate;
+package com.example.solemate.login_register;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -14,6 +14,7 @@ import com.android.volley.VolleyError;
 import com.android.volley.toolbox.StringRequest;
 import com.android.volley.toolbox.Volley;
 import com.example.solemate.databinding.ActivitySignUpBinding;
+import com.example.solemate.konfigurasi;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -29,6 +30,14 @@ public class SignUp extends AppCompatActivity {
         binding = ActivitySignUpBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
 
+        binding.btnLogin.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getApplicationContext(), Login.class);
+                startActivity(intent);
+            }
+        });
+
         binding.btnSignup.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -42,7 +51,7 @@ public class SignUp extends AppCompatActivity {
                 email = String.valueOf(binding.email.getText());
 
                 RequestQueue queue = Volley.newRequestQueue(getApplicationContext());
-                String url ="https://10.4.13.117/SolaMate/register.php";
+                String url = konfigurasi.registerUrl;
 
                 StringRequest stringRequest = new StringRequest(Request.Method.POST, url,
                         new Response.Listener<String>() {
@@ -71,7 +80,7 @@ public class SignUp extends AppCompatActivity {
                         Map<String, String> paramV = new HashMap<>();
                         paramV.put("nama", nama);
                         paramV.put("alamat", alamat);
-                        paramV.put("no_telepon", no_telepon);
+                        paramV.put("nomor_telepon", no_telepon);
                         paramV.put("email", email);
                         paramV.put("password", password);
                         return paramV;

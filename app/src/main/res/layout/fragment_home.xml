@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    tools:context=".Fragment.HomeFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/haii"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Haii 👋"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="25dp"
+            />
+
+        <TextView
+            android:id="@+id/Nama"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/archivo_black"
+            android:text="Timmy Ganteng"
+            android:textAlignment="center"
+            android:textColor="#5D74F8"
+            android:textSize="34sp"
+            android:layout_below="@id/haii"
+            />
+
+        <TextView
+            android:id="@+id/silahkan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Siap menjaga dan merawat Sepatu kamu secara efisien?"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:layout_below="@id/Nama"
+            />
+
+        <Button
+            android:id="@+id/btn_pesan"
+            android:layout_width="280dp"
+            android:textSize="20dp"
+            android:layout_height="60dp"
+            android:layout_below="@id/silahkan"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="#5D74F8"
+            android:text="Pesan Sekarang"
+            android:textColor="@color/white"
+           />
+
+        <Button
+            android:id="@+id/btn_list"
+            android:layout_width="280dp"
+            android:textSize="20dp"
+            android:layout_height="60dp"
+            android:layout_below="@id/btn_pesan"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="#5D74F8"
+            android:text="Detail Pesanan"
+            android:textColor="@color/white"
+          />
+
+        <Button
+            android:id="@+id/btn_tambahan"
+            android:layout_width="280dp"
+            android:textSize="20dp"
+            android:layout_height="60dp"
+            android:layout_below="@id/btn_list"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="#5D74F8"
+            android:text="Layanan Tambahan"
+            android:textColor="@color/white"
+            />
+
+
+
+    </RelativeLayout>
+
+</FrameLayout>

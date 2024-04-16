@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:layout_centerVertical="true"
+    android:gravity="center"
     android:background="#5D74F8">
 
     <TextView
@@ -13,7 +14,6 @@
         android:layout_height="wrap_content"
         android:fontFamily="@font/archivo_black"
         android:text="Login"
-        android:layout_marginTop="200dp"
         android:textAlignment="center"
         android:textColor="#FFFFFF"
         android:textSize="34sp"
@@ -38,8 +38,9 @@
             android:ems="10"
             android:inputType="text"
             android:singleLine="false"
-            android:text="Email"
+            android:hint="Email"
             android:textColor="#FFFFFF"
+            android:textColorHint="#B2FFFFFF"
             tools:layout_editor_absoluteX="60dp"
             tools:layout_editor_absoluteY="282dp" />
 
@@ -73,9 +74,10 @@
             android:backgroundTint="@color/black"
             android:ems="10"
             android:inputType="text"
-            android:text="Password"
-            android:textAlignment="viewStart"
+            android:hint="Password"
             android:textColor="#FFFFFF"
+            android:textColorHint="#B2FFFFFF"
+            android:textAlignment="viewStart"
             tools:layout_editor_absoluteX="59dp"
             tools:layout_editor_absoluteY="334dp" />
 
@@ -89,17 +91,68 @@
 
     </LinearLayout>
 
+    <TextView
+        android:id="@+id/text_error"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Error While Register"
+        android:textAlignment="center"
+        android:textColor="#FF0000"
+        android:visibility="gone"
+        android:layout_below="@id/grubPassword"
+        android:layout_centerHorizontal="true"
+        />
+
+    <ProgressBar
+        android:id="@+id/loading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:visibility="gone"
+        android:layout_centerHorizontal="true"
+        />
+
     <Button
-        android:id="@+id/textView4"
+        android:id="@+id/btn_login"
         android:layout_width="229dp"
         android:layout_marginTop="40dp"
         android:layout_height="wrap_content"
         android:layout_below="@+id/grubPassword"
         android:layout_centerHorizontal="true"
         android:backgroundTint="#00FFFFFF"
-        android:text="Submit"
+        android:text="Login"
         android:textColor="@color/white"
         app:strokeColor="@color/white"
         app:strokeWidth="2dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn_login"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Belum Punya Akun?"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            />
+
+        <TextView
+            android:id="@+id/btn_signup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Daftar"
+            android:textAlignment="center"
+            android:textColor="#FFFF00"
+            android:layout_marginLeft="5dp"
+            android:textStyle="bold"
+            />
+    </LinearLayout>
+
 
 </RelativeLayout>
